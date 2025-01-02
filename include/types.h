@@ -24,6 +24,8 @@ const int8_t int8_t_min = (-0x80);
 
 typedef uint8_t byte_t; // for pure byte data, not arithmetic values
 
+typedef byte_t reg8_t; // 8-bit general-purpose register
+
 // 16-bit types
 typedef unsigned short int uint16_t; // unsigned 16-bit integer
 const uint16_t uint16_t_max = 0xFFFFU;
@@ -37,6 +39,8 @@ const int16_t int16_t_min = (-0x8000);
 
 typedef uint16_t word_t; // for word-sized raw data, not arithmetic values
 
+typedef word_t reg16_t; // 16-bit general-purpose register
+
 // 32-bit types
 typedef unsigned int uint32_t; // unsigned 32-bit integer
 const uint32_t uint32_t_max = 0xFFFFFFFFU;
@@ -49,6 +53,8 @@ const int32_t int32_t_min = (-0x80000000);
 #define INT32_T_MIN (-0x80000000)
 
 typedef uint32_t dword_t; // double-word data, not arithmetic values
+
+typedef dword_t reg32_t; // 32-bit general-purpose register
 
 // 64-bit types
 typedef unsigned long int uint64_t; // unsigned 64-bit integer
@@ -66,4 +72,6 @@ typedef uint64_t qword_t; // quadword-dized data, not arithmetic values
 typedef uint64_t size_t;
 
 typedef uint64_t ptr_t; // generic pointer type
+
+typedef qword_t reg64_t; // 64-bit general-purpose register
 #endif

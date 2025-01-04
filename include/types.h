@@ -74,4 +74,9 @@ typedef uint64_t size_t;
 typedef uint64_t ptr_t; // generic pointer type
 
 typedef qword_t reg64_t; // 64-bit general-purpose register
+
+// null values
+#define NULL 0
+const uint64_t null = 0;
+
 #endif

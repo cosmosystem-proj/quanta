@@ -11,8 +11,13 @@
 #ifndef _QUANTA_PLATFORM_H
 #define _QUANTA_PLATFORM_H
 
+#ifdef __INTELLISENSE__
+#define ENV_HOSTED
+#endif
+
 #ifdef ENV_HOSTED
-#define malloc malloc
+#include <stdlib.h>
+#define malloc_wrapper malloc
 #endif
 
 #endif

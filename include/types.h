@@ -13,13 +13,13 @@
 
 // 8-bit types
 typedef unsigned char uint8; // unsigned 8-bit integer
-const uint8 uint8_max = 0xFFU;
+static const uint8 uint8_max = 0xFFU;
 #define UINT8_MAX 0xFFU
 
 typedef signed char int8; // signed 8-bit integer
-const int8 int8_max = 0x7F;
+static const int8 int8_max = 0x7F;
 #define INT8_MAX 0x7F
-const int8 int8_min = (-0x80);
+static const int8 int8_min = (-0x80);
 #define INT8_MIN (-0x80)
 
 typedef uint8 byte; // for pure byte data, not arithmetic values
@@ -28,13 +28,13 @@ typedef byte reg8; // 8-bit general-purpose register
 
 // 16-bit types
 typedef unsigned short int uint16; // unsigned 16-bit integer
-const uint16 uint16_max = 0xFFFFU;
+static const uint16 uint16_max = 0xFFFFU;
 #define UINT16_MAX 0xFFFFU
 
 typedef signed short int int16; // signed 16-bit integer
-const int16 int16_max = 0x7FFF;
+static const int16 int16_max = 0x7FFF;
 #define INT16_MAX 0x7FFF
-const int16 int16_min = (-0x8000);
+static const int16 int16_min = (-0x8000);
 #define INT16_MIN (-0x8000)
 
 typedef uint16 word; // for word-sized raw data, not arithmetic values
@@ -43,13 +43,13 @@ typedef word reg16; // 16-bit general-purpose register
 
 // 32-bit types
 typedef unsigned int uint32; // unsigned 32-bit integer
-const uint32 uint32_max = 0xFFFFFFFFU;
+static const uint32 uint32_max = 0xFFFFFFFFU;
 #define UINT32_MAX 0xFFFFFFFFU
 
 typedef signed int int32; // signed 32-bit integer
-const int32 int32_max = 0x7FFFFFFF;
+static const int32 int32_max = 0x7FFFFFFF;
 #define INT32_MAX = 0x7FFFFFFF
-const int32 int32_min = (-0x80000000);
+static const int32 int32_min = (-0x80000000);
 #define INT32_MIN (-0x80000000)
 
 typedef uint32 dword; // double-word data, not arithmetic values
@@ -58,13 +58,13 @@ typedef dword reg32; // 32-bit general-purpose register
 
 // 64-bit types
 typedef unsigned long int uint64; // unsigned 64-bit integer
-const uint64 uint64_max = 0xFFFFFFFFFFFFFFFFUL;
+static const uint64 uint64_max = 0xFFFFFFFFFFFFFFFFUL;
 #define UINT64_MAX 0xFFFFFFFFFFFFFFFFUL
 
 typedef signed long int int64; // signed 64-bit integer
-const int64 int64_max = 0x7FFFFFFFFFFFFFFFUL;
+static const int64 int64_max = 0x7FFFFFFFFFFFFFFFUL;
 #define INT64_MAX = 0x7FFFFFFFFFFFFFFFUL
-const int64 int64_min = -0x8000000000000000UL;
+static const int64 int64_min = -0x8000000000000000UL;
 #define INT64_MIN = (-0x8000000000000000UL)
 
 typedef uint64 qword; // quadword-dized data, not arithmetic values
@@ -79,7 +79,7 @@ typedef qword reg64; // 64-bit general-purpose register
 #ifndef NULL
 #define NULL ((void *)0)
 #endif
-const uint64 null = 0;
+static const uint64 null = 0;
 
 typedef _Bool bool;
 

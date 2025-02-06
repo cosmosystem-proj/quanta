@@ -81,9 +81,7 @@ typedef qword reg64; // 64-bit general-purpose register
 #endif
 const uint64 null = 0;
 
-#ifndef bool
-#define bool _Bool
-#endif
+typedef _Bool bool;
 
 #ifndef true
 #define true 1

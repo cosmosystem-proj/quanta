@@ -1,4 +1,4 @@
 [![Hippocratic License HL3-CL-ECO-EXTR-FFD-MEDIA-MY-SUP-SV-TAL-USTA-XUAR](https://img.shields.io/static/v1?label=Hippocratic%20License&message=HL3-CL-ECO-EXTR-FFD-MEDIA-MY-SUP-SV-TAL-USTA-XUAR&labelColor=5e2751&color=bc8c3d)](https://firstdonoharm.dev/version/3/0/cl-eco-extr-ffd-media-my-sup-sv-tal-usta-xuar.html)
 
 # quanta
-Common includes and other basic materials for Cosmosystem projects
+Common includes and other basic materials for Cosmosystem projects.  Called "quanta" because these are the fundamental parts that everything else is built from.

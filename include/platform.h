@@ -14,6 +14,7 @@
 #ifdef __STDC_HOSTED__
 #include <stdlib.h>
 #define malloc_wrapper malloc
+#define free_wrapper free
 #endif
 
 #endif

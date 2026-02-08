@@ -15,6 +15,9 @@
 #include <stdlib.h>
 #define malloc_wrapper malloc
 #define free_wrapper free
+#else
+#define malloc_wrapper kmalloc
+#define free_wrapper kfree
 #endif
 
 #endif

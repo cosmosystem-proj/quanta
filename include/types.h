@@ -82,8 +82,10 @@ typedef qword reg64; // 64-bit general-purpose register
 static const uint64 null = 0;
 
 // this is only necessary before C23, and is illegal after
+#ifndef __INTELLISENSE__
 #if __STDC_VERSION__ < 202311L
 typedef _Bool bool;
+#endif
 #endif
 
 #ifndef true
